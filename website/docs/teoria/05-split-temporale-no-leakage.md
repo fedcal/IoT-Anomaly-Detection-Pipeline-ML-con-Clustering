@@ -1,25 +1,11 @@
 ---
-layout: default
+sidebar_position: 5
 title: Split temporale & no leakage
-parent: Teoria
-nav_order: 5
-math: mathjax
-description: >-
-  Time-aware split su time-series IoT senza shuffle; perché lo split casuale
-  produce leakage; rolling-window cross-validation; drift detection di base
-  per riconoscere cambi di regime.
+description: |
+  Time-aware split, prevenzione del leakage in time series.
 ---
 
 # Split temporale e prevenzione del leakage in time-series
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Lo split casuale è SEMPRE sbagliato su time-series
 

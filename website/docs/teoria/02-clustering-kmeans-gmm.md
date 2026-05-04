@@ -1,25 +1,11 @@
 ---
-layout: default
-title: Clustering KMeans & GMM
-parent: Teoria
-nav_order: 2
-math: mathjax
-description: >-
-  Algoritmi di clustering per anomaly detection unsupervised: KMeans,
-  MiniBatchKMeans, GaussianMixture; scelta di K con silhouette, elbow e BIC;
-  trade-off computazionali su dataset IoT.
+sidebar_position: 2
+title: "Clustering: KMeans & GMM"
+description: |
+  Differenze KMeans vs GMM, quando usarli per anomaly detection.
 ---
 
 # Clustering: KMeans, MiniBatchKMeans, GaussianMixture
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. KMeans — l'algoritmo di base
 

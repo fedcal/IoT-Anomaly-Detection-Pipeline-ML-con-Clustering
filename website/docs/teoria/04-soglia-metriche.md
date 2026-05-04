@@ -1,25 +1,11 @@
 ---
-layout: default
+sidebar_position: 4
 title: Soglia & metriche
-parent: Teoria
-nav_order: 4
-math: mathjax
-description: >-
-  Scelta della soglia ottimale di anomaly detection: percentile vs
-  business-driven; metriche per classi sbilanciate (precision, recall, F1,
-  ROC-AUC, PR-AUC) e validazione vs ground-truth parziale.
+description: |
+  Percentile-based threshold, F1, ROC-AUC, PR-AUC su classi sbilanciate.
 ---
 
 # Soglia di anomalia, metriche e validazione
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Dalla "distanza" al "flag binario"
 
@@ -100,7 +86,7 @@ Curva: TPR (= recall) vs FPR al variare della soglia. AUC = area sotto la curva.
 
 - $1.0$: classifier perfetto.
 - $0.5$: random.
-- $< 0.5$: peggio del random.
+- $&lt; 0.5$: peggio del random.
 
 **Vantaggio**: indipendente dalla soglia. Misura la capacità del modello di separare le due classi.
 

@@ -1,25 +1,11 @@
 ---
-layout: default
+sidebar_position: 1
 title: Anomaly detection unsupervised
-parent: Teoria
-nav_order: 1
-math: mathjax
-description: >-
-  Anomaly detection non supervisionata su time-series IoT industriali: tipi
-  di anomalia (point, contextual, collective), supervised vs unsupervised,
-  perché il clustering è naturale per il problema.
+description: |
+  Approcci unsupervised, distance-based, density-based, isolation forest.
 ---
 
 # Anomaly detection non supervisionata
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Cos'è un'anomalia
 

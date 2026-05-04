@@ -1,27 +1,13 @@
 ---
-layout: default
-title: Scelte di modellazione
-parent: Scelte tecniche
-nav_order: 2
-math: mathjax
-description: >-
-  Scelte di modellazione del progetto IoT Anomaly Detection: famiglia di
-  clustering, scelta di K, finestra rolling, soglia percentile, gestione
-  del rischio e trade-off espliciti.
+sidebar_position: 2
+title: "Scelte di modellazione: razionale"
+description: |
+  Razionale KMeans + GMM, scelta soglia, gestione drift.
 ---
 
 # Scelte di modellazione: razionale
-{: .no_toc }
 
 Documenta le decisioni progettuali del progetto. Per i concetti teorici, vedi la sezione **[Teoria](../../teoria/)**.
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Famiglia di modello: KMeans/MiniBatch
 

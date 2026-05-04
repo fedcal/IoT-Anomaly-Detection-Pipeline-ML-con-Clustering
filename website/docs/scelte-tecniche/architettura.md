@@ -1,24 +1,11 @@
 ---
-layout: default
-title: Architettura
-parent: Scelte tecniche
-nav_order: 1
-description: >-
-  Architettura del pacchetto iot_anomaly: moduli src/, flusso dati,
-  CLI iot-detect, dipendenze fra componenti, contratti d'interfaccia
-  e pattern di estensione.
+sidebar_position: 1
+title: Architettura del progetto
+description: |
+  Moduli, flusso dati IoT, CLI iot-detect.
 ---
 
 # Architettura del progetto
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Layout
 
@@ -105,7 +92,7 @@ Sequenza interna:
 3. `TimeSeriesFeatureEngineer` → rolling, diff, zscore.
 4. `time_split` → 7 giorni train / 3 giorni test.
 5. `StandardScaler` + (opzionale) `PCA`.
-6. `select_k_by_silhouette` su K ∈ {3..10}.
+6. `select_k_by_silhouette` su K ∈ \{3..10\}.
 7. `fit_minibatch_kmeans` + `fit_anomaly_detector` (soglia p99).
 8. `evaluate` su train e test vs `anomaly_label` e `fault_code_true`.
 9. Salvataggio joblib + metriche JSON + figure.
