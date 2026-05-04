@@ -1,6 +1,6 @@
 # IoT Anomaly Detection — Pipeline ML con Clustering
 
-> Pipeline end-to-end di Machine Learning per il rilevamento di anomalie in time-series IoT industriali. Dato grezzo → wrangling → feature engineering temporale → time-aware split → KMeans/MiniBatch/GMM → soglia su percentile → `detect_anomalies()`. Riproducibile, modulare, deploy-ready.
+> Pipeline end-to-end  di Machine Learning per il rilevamento di anomalie in time-series IoT industriali. Dato grezzo → wrangling → feature engineering temporale → time-aware split → KMeans/MiniBatch/GMM → soglia su percentile → `detect_anomalies()`. Riproducibile, modulare, deploy-ready.
 
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6%2B-orange.svg)](https://scikit-learn.org/)
@@ -18,15 +18,19 @@ Il deploy della documentazione (Jekyll + tema **Just the Docs**) avviene automat
 
 ## Indice
 
-- [Contesto](#contesto)
-- [Risultati](#risultati)
-- [Quick start](#quick-start)
-- [Struttura del repository](#struttura-del-repository)
-- [Documentazione](#documentazione)
-- [Inferenza](#inferenza)
-- [Riproducibilità](#riproducibilità)
-- [Roadmap](#roadmap)
-- [Autore & licenza](#autore--licenza)
+- [IoT Anomaly Detection — Pipeline ML con Clustering](#iot-anomaly-detection--pipeline-ml-con-clustering)
+  - [Repository GitHub](#repository-github)
+  - [Indice](#indice)
+  - [Contesto](#contesto)
+  - [Risultati](#risultati)
+  - [Quick start](#quick-start)
+    - [Notebook didattici](#notebook-didattici)
+  - [Struttura del repository](#struttura-del-repository)
+  - [Documentazione](#documentazione)
+  - [Inferenza](#inferenza)
+  - [Riproducibilità](#riproducibilità)
+  - [Roadmap](#roadmap)
+  - [Autore \& licenza](#autore--licenza)
 
 ---
 
