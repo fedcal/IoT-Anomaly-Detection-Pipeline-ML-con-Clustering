@@ -12,7 +12,7 @@
 **Nome consigliato del repository pubblico**: `iot-anomaly-detection-clustering`
 URL atteso dopo la pubblicazione: <https://github.com/fedcal/iot-anomaly-detection-clustering>
 
-Il deploy della documentazione (Jekyll + tema **Just the Docs**) avviene automaticamente a ogni push su `main` tramite la build nativa di GitHub Pages. Da abilitare in *Settings → Pages → Source = Deploy from a branch, Branch = `main` / `/docs`* alla prima volta.
+Il deploy della documentazione (Jekyll + tema **Just the Docs**) è automatizzato dal workflow [`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml): viene eseguito ad ogni push su `main` (o manualmente dalla tab Actions). **Setup richiesto una volta sola**: *Settings → Pages → Build and deployment → Source = **GitHub Actions***.
 
 ---
 
