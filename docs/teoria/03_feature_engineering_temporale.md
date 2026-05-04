@@ -1,4 +1,25 @@
+---
+layout: default
+title: Feature engineering temporale
+parent: Teoria
+nav_order: 3
+math: mathjax
+description: >-
+  Feature engineering temporale per time-series IoT: rolling mean/std,
+  derivate, z-score locale, calcolo per asset, riduzione di dimensionalità
+  via PCA come step opzionale.
+---
+
 # Feature engineering per time-series IoT
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Perché non basta lo "stato istantaneo"
 

@@ -5,14 +5,14 @@
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6%2B-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-MkDocs%20Material-blueviolet.svg)](https://fedcal.github.io/iot-anomaly-detection-clustering/)
+[![Docs](https://img.shields.io/badge/docs-Just%20the%20Docs-blueviolet.svg)](https://fedcal.github.io/iot-anomaly-detection-clustering/)
 
 ## Repository GitHub
 
 **Nome consigliato del repository pubblico**: `iot-anomaly-detection-clustering`
 URL atteso dopo la pubblicazione: <https://github.com/fedcal/iot-anomaly-detection-clustering>
 
-Il deploy della documentazione (MkDocs Material) avviene automaticamente a ogni push su `main` tramite il workflow [`.github/workflows/docs.yml`](.github/workflows/docs.yml). Da abilitare in *Settings → Pages → Source = GitHub Actions* alla prima volta.
+Il deploy della documentazione (Jekyll + tema **Just the Docs**) avviene automaticamente a ogni push su `main` tramite la build nativa di GitHub Pages. Da abilitare in *Settings → Pages → Source = Deploy from a branch, Branch = `main` / `/docs`* alla prima volta.
 
 ---
 
@@ -122,7 +122,7 @@ docs/
 └── scelte_tecniche/     Architettura, scelte di modello
 data/                  Dataset (gitignored)
 reports/               Output (gitignored)
-.github/workflows/     CI/CD per deploy automatico docs
+docs/                  Sito Jekyll + Just the Docs (GitHub Pages)
 ```
 
 ---
@@ -141,7 +141,7 @@ I 5 file in [`docs/teoria/`](docs/teoria/) coprono i fondamenti necessari:
 
 In [`docs/scelte_tecniche/`](docs/scelte_tecniche/) sono documentate le decisioni progettuali (scelta del modello, K, finestra rolling, soglia, ecc.).
 
-Sito navigabile: <https://fedcal.github.io/iot-anomaly-detection-clustering/> (GitHub Pages, deploy automatico via Actions).
+Sito navigabile: <https://fedcal.github.io/iot-anomaly-detection-clustering/> (GitHub Pages, build nativa Jekyll dalla cartella `/docs`).
 
 ---
 

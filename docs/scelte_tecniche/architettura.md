@@ -1,4 +1,24 @@
+---
+layout: default
+title: Architettura
+parent: Scelte tecniche
+nav_order: 1
+description: >-
+  Architettura del pacchetto iot_anomaly: moduli src/, flusso dati,
+  CLI iot-detect, dipendenze fra componenti, contratti d'interfaccia
+  e pattern di estensione.
+---
+
 # Architettura del progetto
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Layout
 

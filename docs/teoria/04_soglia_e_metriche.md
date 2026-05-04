@@ -1,4 +1,25 @@
+---
+layout: default
+title: Soglia & metriche
+parent: Teoria
+nav_order: 4
+math: mathjax
+description: >-
+  Scelta della soglia ottimale di anomaly detection: percentile vs
+  business-driven; metriche per classi sbilanciate (precision, recall, F1,
+  ROC-AUC, PR-AUC) e validazione vs ground-truth parziale.
+---
+
 # Soglia di anomalia, metriche e validazione
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Dalla "distanza" al "flag binario"
 
