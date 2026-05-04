@@ -1,0 +1,133 @@
+# MkDocs config — sito documentazione PW2 IoT Anomaly Detection.
+# Tema Material (mobile-first by default), SEO via meta tags + plugins.
+# Build locale: `mkdocs serve`. Deploy: GitHub Actions (.github/workflows/docs.yml).
+
+site_name: IoT Anomaly Detection — Pipeline ML con Clustering
+site_description: >-
+  Pipeline end-to-end di Machine Learning per il rilevamento di anomalie
+  in serie temporali IoT industriali tramite clustering. Time-aware split,
+  feature engineering rolling, KMeans/GMM, soglia su percentile, validazione
+  vs ground-truth parziale.
+site_author: Federico Calò
+site_url: https://fedcal.github.io/iot-anomaly-detection-clustering/
+
+repo_name: fedcal/iot-anomaly-detection-clustering
+repo_url: https://github.com/fedcal/iot-anomaly-detection-clustering
+edit_uri: edit/main/docs/
+
+copyright: >-
+  Copyright &copy; 2026 <a href="https://federicocalo.dev" target="_blank" rel="noopener">Federico Calò</a> —
+  Distribuito sotto licenza <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a>.
+
+theme:
+  name: material
+  language: it
+  # Mobile-first: il tema Material è responsive per default.
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer        # Footer paginazione (prev/next)
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - toc.follow
+    - announce.dismiss
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modalità scura
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modalità chiara
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+extra:
+  generator: false  # rimuove il default MkDocs "Made with..."
+  # Riferimenti social per Open Graph + paginazione footer.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fedcal
+      name: GitHub di Federico Calò
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/federicocalo/
+      name: LinkedIn
+    - icon: fontawesome/solid/globe
+      link: https://federicocalo.dev
+      name: Sito personale
+  homepage: https://federicocalo.dev
+  status:
+    new: Recentemente aggiunto
+    deprecated: Deprecato
+
+plugins:
+  - search:
+      lang:
+        - it
+        - en
+  # tags: abilitalo se aggiungerai i tag YAML alle pagine.
+  # - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      permalink_title: Link permanente alla sezione
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Teoria:
+      - Anomaly detection unsupervised: teoria/01_anomaly_detection_unsupervised.md
+      - Clustering (KMeans / GMM): teoria/02_clustering_kmeans_gmm.md
+      - Feature engineering temporale: teoria/03_feature_engineering_temporale.md
+      - Soglia & metriche: teoria/04_soglia_e_metriche.md
+      - Split temporale & no-leakage: teoria/05_split_temporale_no_leakage.md
+  - Scelte tecniche:
+      - Architettura: scelte_tecniche/architettura.md
+      - Scelte di modellazione: scelte_tecniche/scelte_modello.md

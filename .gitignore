@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Virtual env
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Dataset (33 MB, fornito col PW)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Modelli e artefatti riproducibili
+reports/models/*
+!reports/models/.gitkeep
+reports/metrics.json
+
+# MkDocs build output
+site/
+
+# Log
+*.log
+logs/
